@@ -17,10 +17,17 @@ class Unlock extends Backend
 		// find the member
 		$objMember = MemberModel::findBy ('id', \Input::get ('id'));
 
+
 		// unlock the member
 		$objMember->loginCount = Config::get ('loginCount');
 		$objMember->locked = 0;
 		$objMember->save ();
+
+
+		// write a log entry
+		$strLog = sprintf ('Manually unlocking the member "%s"', $objMember->username);
+		System::log ($strLog, __function__, 'ACCESS');
+
 
 		// jump back to the member list
 		$this->redirect ('contao/main.php?do=member');
@@ -38,10 +45,17 @@ class Unlock extends Backend
 		// find the user
 		$objUser = UserModel::findBy ('id', \Input::get ('id'));
 
+
 		// unlock the user
 		$objUser->loginCount = Config::get ('loginCount');
 		$objUser->locked = 0;
 		$objUser->save ();
+
+
+		// write a log entry
+		$strLog = sprintf ('Manually unlocking the user "%s"', $objUser->username);
+		System::log ($strLog, __function__, 'ACCESS');
+
 
 		// jump back to the user list
 		$this->redirect ('contao/main.php?do=user');
