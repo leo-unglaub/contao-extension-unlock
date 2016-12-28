@@ -70,7 +70,7 @@ class Unlock extends Backend
 				$this->addToUrl ($href . '&amp;id=' . $row['id']),
 				specialchars ($title),
 				$attributes,
-				$this->generateImage ($icon, $label),
+				$this->generateImage ($icon, $label)
 			);
 		}
 	}
