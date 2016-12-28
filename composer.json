@@ -1,0 +1,42 @@
+{
+	"name": "leo-unglaub/contao-unlock",
+	"description": "Allows the administrator to unlock user and member accounts with one click from the backend.",
+	"keywords": [
+		"contao",
+		"unlock",
+		"user",
+		"member"
+	],
+	"type": "contao-module",
+	"license": "LGPL-3.0+",
+	"authors": [
+		{
+			"name": "Leo Unglaub",
+			"email": "leo@unglaub.at",
+			"homepage": "https://leo.unglaub.at",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"email": "leo@leo-unglaub.net",
+		"issues": "https://bitbucket.org/leo-unglaub/contao-unlock/issues",
+		"wiki": "https://leo.unglaub.at/software/contao-extensions/",
+		"irc": "irc://irc.freenode.org/contao.dev",
+		"source": "https://bitbucket.org/leo-unglaub/contao-unlock/src/"
+	},
+	"require": {
+		"php": "^5.6 || ^7.0",
+		"contao/core": "~3",
+		"contao-community-alliance/composer-installer": "*"
+	},
+	"replace": {
+		"contao-legacy/unlock": "*"
+	},
+	"extra": {
+		"contao": {
+			"sources": {
+				"system/modules/unlock": "system/modules/unlock"
+			}
+		}
+	}
+}
