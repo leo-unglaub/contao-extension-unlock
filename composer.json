@@ -18,11 +18,10 @@
 		}
 	],
 	"support": {
-		"email": "leo@leo-unglaub.net",
 		"issues": "https://bitbucket.org/leo-unglaub/contao-unlock/issues",
-		"wiki": "https://leo.unglaub.at/software/contao-extensions/",
-		"irc": "irc://irc.freenode.org/contao.dev",
-		"source": "https://bitbucket.org/leo-unglaub/contao-unlock/src/"
+		"source": "https://bitbucket.org/leo-unglaub/contao-unlock/src/",
+		"email": "leo@leo-unglaub.net",
+		"irc": "irc://irc.freenode.org/contao.dev"
 	},
 	"require": {
 		"php": "^5.6 || ^7.0",
