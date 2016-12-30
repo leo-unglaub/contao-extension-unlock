@@ -34,7 +34,7 @@
 	"extra": {
 		"contao": {
 			"sources": {
-				"system/modules/unlock": "system/modules/unlock"
+				"src/system/modules/unlock": "system/modules/unlock"
 			}
 		}
 	}
